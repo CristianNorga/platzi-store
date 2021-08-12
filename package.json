@@ -70,6 +70,8 @@
   "homepage": "https://github.com/CristianNorga/platzi-store/#readme",
   "jest": {
     "verbose": true,
+    "automock": false,
+    "resetMocks": false,
     "setupFilesAfterEnv": [
       "<rootDir>/src/__test__/setupTest.js"
     ],
