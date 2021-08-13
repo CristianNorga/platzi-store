@@ -6,11 +6,10 @@ import Layout from '../components/Layout';
 import NotFound from '../containers/NotFound';
 
 const App = () => (
-  <BrowserRouter>
+  <BrowserRouter basename='/platzi-store'>
     <Layout>
       <Switch>
-        <Route exact path="
-platzi-store" component={Home} />
+        <Route exact path="/" component={Home} />
         <Route exact path="/checkout" component={Checkout} />
         <Route component={NotFound} />
       </Switch>
